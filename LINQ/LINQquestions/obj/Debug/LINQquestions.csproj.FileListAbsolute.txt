@@ -1,0 +1,2 @@
+C:\Users\EvanC\Documents\GitHub\LINQquestions\LINQquestions\bin\Debug\LINQquestions.exe.config
+C:\Users\EvanC\Documents\GitHub\LINQquestions\LINQ\LINQquestions\bin\Debug\LINQquestions.exe.config

@@ -10,6 +10,17 @@ namespace LINQquestions
     {
         static void Main(string[] args)
         {
+            //1
+            var words = new List<string>() { "hello", "apple", "turtle", "turtle", "pear" };
+            IEnumerable<string> Words = words.Distinct();
+            var alphabeticallyOrderedWords = Words.OrderBy(w => w).ToList();
+            foreach(var word in alphabeticallyOrderedWords)
+            {
+                Console.WriteLine(word);
+            }
+
+            //2
+
         }
     }
 }

@@ -47,21 +47,37 @@ namespace LINQquestions
             //double classAverage = averages.Average();
             //Console.WriteLine("Class Average: " + Math.Round(classAverage, 2));
 
-            //3
-            var word = new List<string>() { "Llewellyn" };
-            Regex rgx = new Regex("");
-            var subString = rgx.Split(word[0].ToLower());
-            var newWord = subString.OrderBy(l => l).ToList();
-            var query = newWord.AsQueryable().GroupBy(l => l);
-            foreach (var letter in query)
-            {
-                if (!letter.Key.Equals(""))
-                {
-                    Console.WriteLine($"{letter.Key} {letter.Count()}");
-                }
-            }
+            ////3
+            //var word = new List<string>() { "Llewellyn" };
+            //Regex rgx = new Regex("");
+            //var subString = rgx.Split(word[0].ToLower());
+            //var newWord = subString.OrderBy(l => l).ToList();
+            //var query = newWord.AsQueryable().GroupBy(l => l);
+            //foreach (var letter in query)
+            //{
+            //    if (!letter.Key.Equals(""))
+            //    {
+            //        Console.WriteLine($"{letter.Key} {letter.Count()}");
+            //    }
+            //}
 
-            //4
+            ////1
+            //var words = new List<string>() { "this", "to", "apple", "math", "pears" };
+            //IEnumerable<string> Words = words.Distinct();
+            //foreach(var word in Words)
+            //{
+            //    if (word.Contains("th"))
+            //    {
+            //        Console.WriteLine(word);
+            //    }
+            //}
+
+            //2
+            var pantsCategory = new List<Pants>() { new Pants() };
+            var shirtsCategory = new List<Shirts>() { new Shirts() };
+            var shortsCategory = new List<Shorts>() { new Shorts() };
+            IEnumerable<IProduct> products = pantsCategory.Distinct();
+
         }
     }
 }
